@@ -4,11 +4,7 @@ import java.util.Properties;
 import org.mybatis.generator.api.CommentGenerator;
 import org.mybatis.generator.api.IntrospectedColumn;
 import org.mybatis.generator.api.IntrospectedTable;
-import org.mybatis.generator.api.dom.java.CompilationUnit;
-import org.mybatis.generator.api.dom.java.Field;
-import org.mybatis.generator.api.dom.java.InnerClass;
-import org.mybatis.generator.api.dom.java.InnerEnum;
-import org.mybatis.generator.api.dom.java.Method;
+import org.mybatis.generator.api.dom.java.*;
 import org.mybatis.generator.api.dom.xml.XmlElement;
 
 /**
@@ -35,6 +31,15 @@ public class MyCommentGenerator implements CommentGenerator {
     }
 
     public void addFieldComment(Field field, IntrospectedTable introspectedTable) {
+    }
+
+    /**
+     * 1.3.3新加的接口
+     * @param topLevelClass
+     * @param introspectedTable
+     */
+    public void addModelClassComment(TopLevelClass topLevelClass, IntrospectedTable introspectedTable) {
+
     }
 
     public void addClassComment(InnerClass innerClass, IntrospectedTable introspectedTable) {
